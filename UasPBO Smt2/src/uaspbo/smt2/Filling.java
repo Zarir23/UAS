@@ -8,6 +8,6 @@ package uaspbo.smt2;
  *
  * @author refah
  */
-public interface NewInterface {
+public interface Filling {
     
 }
