@@ -8,6 +8,6 @@ package uaspbo.smt2;
  *
  * @author 62821
  */
-public class Pizza {
+public class Pizza extends Bahan {
     
 }
