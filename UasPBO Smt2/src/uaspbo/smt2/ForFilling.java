@@ -8,6 +8,6 @@ package uaspbo.smt2;
  *
  * @author refah
  */
-public interface Filling {
-    
+public interface ForFilling {
+    abstract double filling();
 }

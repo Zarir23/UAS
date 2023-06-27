@@ -8,6 +8,6 @@ package uaspbo.smt2;
  *
  * @author Lenovo
  */
-public interface Toping {
-    
+public interface ForTopping {
+    abstract double topping();
 }
