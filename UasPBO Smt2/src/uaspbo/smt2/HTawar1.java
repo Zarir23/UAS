@@ -6,19 +6,18 @@ package uaspbo.smt2;
 
 /**
  *
- * @author Muhammad Afif Firdaus
+ * @author refah
  */
-public class HManis2 extends HModal implements ForFilling, ForTopping {
+public class HTawar1 extends HModal implements ForFilling {
     BelanjaBahan obj1 = new BelanjaBahan();
     TampilOrder obj2 = new TampilOrder();
-    CatatOrder obj3 = new CatatOrder();
-
-    //dikali dengan perbandingan adonan manis : total adonan terus dibagi 220(karena roti manis ada 220 pcs)
+    
+    //dikali dengan perbandingan adonan tawar : total adonan
     @Override
     double hTepung() {
         obj2.order();
         double modal;
-        modal = obj1.bljTepung() * 11000/26900 /220;
+        modal = obj1.bljTepung() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -26,7 +25,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hGula() {
         obj2.order();
         double modal;
-        modal = obj1.bljGula() * 11000/26900 /220;
+        modal = obj1.bljGula() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -34,7 +33,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hButter() {
         obj2.order();
         double modal;
-        modal = obj1.bljButter() * 11000/26900 /220;
+        modal = obj1.bljButter() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -42,7 +41,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hRagi() {
         obj2.order();
         double modal;
-        modal = obj1.bljRagi() * 11000/26900 /220;
+        modal = obj1.bljRagi() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -50,7 +49,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hSusuB() {
         obj2.order();
         double modal;
-        modal = obj1.bljSbuk() * 11000/26900 /220;
+        modal = obj1.bljSbuk() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -58,7 +57,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hSusuC() {
         obj2.order();
         double modal;
-        modal = obj1.bljSca() * 11000/26900 /220;
+        modal = obj1.bljSca() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -66,7 +65,7 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hTelur() {
         obj2.order();
         double modal;
-        modal = obj1.bljTelur() * 11000/26900 /220;
+        modal = obj1.bljTelur() * 14000/26900 * 35/265;
         return modal;
     }
 
@@ -74,24 +73,19 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
     double hEsBatu() {
         obj2.order();
         double modal;
-        modal = obj1.bljEs() * 11000/26900 /220;
+        modal = obj1.bljEs() * 14000/26900 * 35/265;
         return modal;
     }
 
     @Override
     public double filling() {
-        double hRedBean = obj1.bljRed() * 10/1000;
-        return hRedBean;
-    }
-
-    @Override
-    public double topping() {
-        double hKrim = obj1.bljKrim() * 5/500;
-        return hKrim;
+        double hCoklat;
+        hCoklat = obj1.bljCoklat() * 80/1850;
+        return hCoklat;
     }
     
     public int hitung(){
-        double hitung = this.hTepung() + this.hGula() + this.hButter() + this.hRagi() + this.hSusuB() + this.hSusuC() + this.hTelur() + this.hGula() + this.filling() + this.topping();
+        double hitung = this.hTepung() + this.hGula() + this.hButter() + this.hRagi() + this.hSusuB() + this.hSusuC() + this.hTelur() + this.hGula() + this.filling();
         double laba = hitung * 40 / 100;
         hitung = hitung + laba;
         int harga = (int)hitung;

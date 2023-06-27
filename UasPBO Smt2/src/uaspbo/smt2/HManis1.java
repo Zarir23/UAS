@@ -6,19 +6,20 @@ package uaspbo.smt2;
 
 /**
  *
- * @author Muhammad Afif Firdaus
+ * @author refah
  */
-public class HManis2 extends HModal implements ForFilling, ForTopping {
+public class HManis1 extends HModal implements ForFilling, ForTopping {
     BelanjaBahan obj1 = new BelanjaBahan();
     TampilOrder obj2 = new TampilOrder();
-    CatatOrder obj3 = new CatatOrder();
-
+    CatatAdonan obj3 = new CatatAdonan();
+    
     //dikali dengan perbandingan adonan manis : total adonan terus dibagi 220(karena roti manis ada 220 pcs)
     @Override
     double hTepung() {
         obj2.order();
         double modal;
         modal = obj1.bljTepung() * 11000/26900 /220;
+        
         return modal;
     }
 
@@ -80,14 +81,19 @@ public class HManis2 extends HModal implements ForFilling, ForTopping {
 
     @Override
     public double filling() {
-        double hRedBean = obj1.bljRed() * 10/1000;
-        return hRedBean;
+        double modal;
+        double hKeju = obj1.bljKeju() * 5/2450;
+        double hCoklat = obj1.bljCoklat() * 5/1850;
+        modal = hKeju + hCoklat;
+        return modal;
+        
     }
 
     @Override
     public double topping() {
-        double hKrim = obj1.bljKrim() * 5/500;
-        return hKrim;
+        double hCoklat;
+        hCoklat = obj1.bljCoklat() * 5/1850;
+        return hCoklat;
     }
     
     public int hitung(){
