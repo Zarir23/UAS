@@ -8,7 +8,7 @@ package uaspbo.smt2;
  *
  * @author Lenovo
  */
-public class HTawar2 {
+public class HTawar2 extends HModal implements ForFilling{
     BelanjaBahan obj1 = new BelanjaBahan();
     TampilOrder obj2 = new TampilOrder();
 
