@@ -1,13 +1,13 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package uaspbo.smt2;
 
 /**
  *
- * @author Lenovo
+ * @author 62821
  */
-public interface Toping {
+public class BahanPizza {
     
 }

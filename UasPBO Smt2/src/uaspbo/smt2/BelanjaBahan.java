@@ -8,6 +8,10 @@ package uaspbo.smt2;
  *
  * @author 62821
  */
+<<<<<<<< HEAD:UasPBO Smt2/src/uaspbo/smt2/BelanjaBahan.java
 public class BelanjaBahan {
+========
+public class BahanManis {
+>>>>>>>> 97feb0a4d99f7da4bcf1a6ffcfec313feefb2fdd:UasPBO Smt2/src/uaspbo/smt2/BahanManis.java
     
 }

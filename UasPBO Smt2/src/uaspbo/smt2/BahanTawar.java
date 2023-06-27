@@ -6,8 +6,8 @@ package uaspbo.smt2;
 
 /**
  *
- * @author 62821
+ * @author Lenovo
  */
-public class RotiManis {
+public class BahanTawar {
     
 }
