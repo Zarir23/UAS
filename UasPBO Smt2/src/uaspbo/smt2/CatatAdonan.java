@@ -16,9 +16,21 @@ public class CatatAdonan {
         TampilOrder obj1 = new TampilOrder();
         obj1.order();
         double adonan;
-        
-        
-     
+         double adonan;
+        adonan = obj1.doughT() / 2065;
+        return Math.ceil(adonan);
+    }
+    public double AdonanPizza(){
+        TampilOrder obj1 = new TampilOrder();
+        obj1.order();
+        double adonan;
+        adonan = obj1.doughP() / 1950;
+        return Math.ceil(adonan);
+    }
+    public double allAdonan(){
+        double all;
+        all = this.AdonanManis() + this.AdonanTawar() + this.AdonanPizza();
+        return all;
     }
     
 }
