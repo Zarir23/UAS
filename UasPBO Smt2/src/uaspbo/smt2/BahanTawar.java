@@ -10,4 +10,13 @@ package uaspbo.smt2;
  */
 public class BahanTawar {
     
+    
+    public double tepungTerigu(){
+        double tepung = obj1.AdonanTawar() * 1000;
+        return tepung;
+    }
+    public double gulaPasir(){
+        double tepung = obj1.AdonanTawar() * 125;
+        return tepung;
+    }
 }
