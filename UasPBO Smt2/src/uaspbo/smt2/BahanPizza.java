@@ -9,5 +9,10 @@ package uaspbo.smt2;
  * @author 62821
  */
 public class BahanPizza {
+   
+    CatatAdonan obj1 = new CatatAdonan();
     
+    public double tepungTerigu(){
+        
+    }
 }
