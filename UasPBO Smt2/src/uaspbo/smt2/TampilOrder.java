@@ -84,8 +84,4 @@ public class TampilOrder {
         return itemP;
     }
     
-    public void tampilOrder(){
-        System.out.println("h " + item);    
-    }
-    
 }
