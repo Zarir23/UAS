@@ -83,9 +83,4 @@ public class TampilOrder {
     public double doughP(){
         return itemP;
     }
-    
-    public void tampilOrder(){
-        System.out.println("h " + item);    
-    }
-    
 }
