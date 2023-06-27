@@ -12,11 +12,17 @@ public class CatatAdonan {
     
      //menghitung berapa takar adonan dari setiap jenis yang perlu dibuat
     
-    public double Adonanmanis(){
+    public double AdonanManis(){
         TampilOrder obj1 = new TampilOrder();
         obj1.order();
         double adonan;
-         double adonan;
+        adonan = obj1.doughT() / 2065;
+        return Math.ceil(adonan);
+    }
+    public double AdonanTawar(){
+        TampilOrder obj1 = new TampilOrder();
+        obj1.order();
+        double adonan;
         adonan = obj1.doughT() / 2065;
         return Math.ceil(adonan);
     }
