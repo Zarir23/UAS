@@ -53,7 +53,7 @@ public class UasPBOSmt2 {
         System.out.println("Smoked beef: " + obj2.smokedBeef());
         System.out.println("Bawang bombay: " + obj2.bawangBombay());
         
-        //System.out.println("\nDaftar harga: \n");
+        System.out.println("\nDaftar harga: \n");
         HManis1 hm1 = new HManis1();
         System.out.println("Harga 1 pcs Roti Manis varian 1: Rp" + hm1.hitung());
         HManis2 hm2 = new HManis2();
