@@ -8,7 +8,7 @@ package uaspbo.smt2;
  *
  * @author Muhammad Afif Firdaus
  */
-public class HManis2 extends HModal implements ForFilling, ForTopping{
+public class HManis2 extends HModal implements ForFilling, ForTopping {
     BelanjaBahan obj1 = new BelanjaBahan();
     TampilOrder obj2 = new TampilOrder();
     CatatOrder obj3 = new CatatOrder();
