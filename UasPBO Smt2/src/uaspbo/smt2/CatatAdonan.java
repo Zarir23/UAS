@@ -16,7 +16,7 @@ public class CatatAdonan {
         TampilOrder obj1 = new TampilOrder();
         obj1.order();
         double adonan;
-        adonan = obj1.doughT() / 2065;
+        adonan = obj1.doughT() / 2350;
         return Math.ceil(adonan);
     }
     public double AdonanTawar(){
